@@ -14,6 +14,8 @@
 #  index_comments_on_board_id  (board_id)
 #
 
+
+
 class Comment < ApplicationRecord
   belongs_to :board
 end
