@@ -6,6 +6,9 @@ ja:
         title: タイトル
         body: 本文
         #エラーメッセージ用の日本語化設定
+      comment:
+        name: 名前
+        comment: コメント
   views:
     pagination:
       first: 最初

@@ -17,5 +17,8 @@
 
 
 class Comment < ApplicationRecord
-  belongs_to :board
+  belongs_to :board, dependent: :destroy
+  
+  validates :name, presence: true, length:{ maximum: 10 }
+  validates :comment, presence: true, length:{ maximum: 1000 }
 end
