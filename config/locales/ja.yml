@@ -1,8 +1,16 @@
 ja:
+  activerecord:
+    attributes:
+      board:
+        name: 名前
+        title: タイトル
+        body: 本文
+        #エラーメッセージ用の日本語化設定
   views:
     pagination:
-      first: '最初'
-      last: '最後'
-      previous: '前へ'
-      next: '次へ'
-      truncate: '...'
+      first: 最初
+      last: 最後
+      previous: 前
+      next: 次
+      truncate: ...
+      #kaminariの日本語化設定

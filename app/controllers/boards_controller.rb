@@ -8,13 +8,21 @@ class BoardsController < ApplicationController
   end
 
   def create
-    board = Board.create(board_params)
-
+    board = Board.new(board_params)
+    if board.save
+    flash[:notice] = "「#{board.title}」のスレッドが作成されました"
     redirect_to board
+    else
+      redirect_to new_board_path, flash: {
+        board: board,
+        error_messages: board.errors.full_messages
+      }
+    end
   end
 
   def show
     @board = Board.find(params[:id])
+    @comment = @board.comments.new
   end
 
   def edit
@@ -32,7 +40,7 @@ class BoardsController < ApplicationController
     board = Board.find(params[:id])
     board.delete
 
-    redirect_to boards_path
+    redirect_to boards_path, flash: {notice: "「#{board.title}」のスレッドが削除されました"}
   end
 
   private
