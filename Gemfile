@@ -17,7 +17,7 @@ gem 'rails-i18n'
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
-  #gemの名前と読み込むライブラリが違うので明示的に読み込む
+  #gemの名前と読み込むライブラリが違うので明示的に読み込む必要あり
   gem 'rails-flog', require: 'flog'
 end
 
