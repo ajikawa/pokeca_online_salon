@@ -49,11 +49,13 @@ class BoardsController < ApplicationController
 
   private
 
+#画像投稿機能追加
   def board_params
-    params.require(:board).permit(:name, :title, :body, tag_ids: [])
+    params.require(:board).permit(:name, :title, :body, :img, :remove_img, tag_ids: [])
   end
 
   def set_target_board
     @board = Board.find(params[:id])
   end
+  
 end

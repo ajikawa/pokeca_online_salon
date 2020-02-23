@@ -4,6 +4,7 @@
 #
 #  id         :integer          not null, primary key
 #  body       :text
+#  img        :string
 #  name       :string
 #  title      :string
 #  created_at :datetime         not null

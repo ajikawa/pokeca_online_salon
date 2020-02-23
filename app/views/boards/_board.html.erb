@@ -7,6 +7,10 @@
   </div>
   <div class="card-body">
     <p class="card-text"><%= simple_format(board.body) %></p>
+    <p>
+      <strong>Image:</strong>
+      <%= image_tag @board.img.url if @board.img? %>
+      </p>
     <p class="text-right font-weight-bold mr-10"><%= board.name %></p>
   </div>
 </div>
