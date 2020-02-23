@@ -17,13 +17,4 @@ if Rails.env == 'development'
     { name: '大会情報' },
     { name: 'グッズ情報' },
   ])
-  
-  Tag.delete([
-   { name: 'Ruby' },
-    { name: 'Ruby on Rails4' },
-    { name: 'Ruby on Rails5' },
-    { name: 'Python2' },
-    { name: 'Python3' },
-    { name: 'Django2' }
-  ])
 end

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PokecaOnlineSalon</title>
+    <title>App</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,9 @@
   </head>
 
   <body>
+    <%= render 'header' %>
     <div class="container">
-    <%= yield %>
+      <%= yield %>
+    </div>
   </body>
 </html>
