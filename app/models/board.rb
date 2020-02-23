@@ -20,4 +20,14 @@ class Board < ApplicationRecord
   validates :name, presence: true, length: { maximum: 10 }
   validates :title, presence: true, length: { maximum: 30 }
   validates :body, presence: true, length: { maximum: 1000 }
+  validate  :img_size
+
+  private
+
+    # アップロードされた画像のサイズをバリデーションする
+    def picture_size
+      if picture.size > 5.megabytes
+        errors.add(:img, "should be less than 5MB")
+      end
+    end
 end
