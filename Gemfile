@@ -13,6 +13,10 @@ gem 'mini_racer'
 gem 'kaminari'
 gem 'rails-i18n'
 gem 'carrierwave'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'dotenv-rails'
 
 
 group :development, :test do
