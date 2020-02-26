@@ -13,10 +13,11 @@ class BoardsController < ApplicationController
   def create
     board = Board.new(board_params)
     if board.save
-      flash[:notice] = "「#{board.title}」スレッドを作成しました"
+      flash[:notice] = "「#{board.title}」のスレッドを作成しました"
       redirect_to board
     else
-      redirect_to :back, flash: {
+        #ちょっと変えた
+        redirect_back fallback_location: root_path, flash: {
         board: board,
         error_messages: board.errors.full_messages
       }

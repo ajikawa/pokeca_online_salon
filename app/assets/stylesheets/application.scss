@@ -14,4 +14,23 @@
 @import "bootstrap";
 @import "base";
 @import "boards";
-@import "comments"
+@import "comments";
+@import "home";
+
+// ログイン画面
+
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+
+// 「ログインしました」などのフラッシュ用スタイル
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
