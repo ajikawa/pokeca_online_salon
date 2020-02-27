@@ -1,9 +1,9 @@
 <div class="col-sm-12">
-<p>Find me in app/views/home/index.html.erb</p>
 <% if user_signed_in? %>
 Logged in as <strong><%= current_user.name %></strong>.<br/>
 <%= link_to 'プロフィール変更', edit_user_registration_path %> |
-<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>|
+<%= link_to 'スレッド画面へ', boards_path%> |
 <% else %>
 <%= link_to "サインイン", new_user_registration_path %> |
 <%= link_to "ログイン", new_user_session_path %>
