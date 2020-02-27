@@ -6,18 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 #開発環境でのデータ
-Rails.env.development?
 
-  Tag.create([
-    { name: 'デッキ構築' },
-    { name: '環境考察' },
-    { name: '大会情報' },
-    { name: 'グッズ情報' },
-    { name: 'カード評価' },
-  ])
-
-Rails.env.production?
-  
   Tag.create([
     { name: 'デッキ構築' },
     { name: '環境考察' },
