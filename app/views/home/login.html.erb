@@ -5,7 +5,8 @@ Logged in as <strong><%= current_user.name %></strong>.<br/>
 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>|
 <%= link_to 'スレッド画面へ', boards_path%> |
 <% else %>
-<%= link_to "サインイン", new_user_registration_path %> |
-<%= link_to "ログイン", new_user_session_path %>
+<h1>ポケカオンラインサロンへようこそ!</h1>
+はじめての方は<%= link_to "サインイン", new_user_registration_path %> |
+アカウントをお持ちの方は<%= link_to "ログイン", new_user_session_path %>
 <% end %>
 </div>
