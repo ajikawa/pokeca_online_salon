@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリ概要
+Ruby on Railsの学習のため作成した，ポケモンカードゲーマー向けのwebアプリケーションです.
+githubで数時間単位のタスクをissueで管理し，対応する作業ブランチを切って実装終了するたびにプルリクして，issueと不要ブランチクローズという流れで開発しました．
+現場の複数人開発を想定したgithub flowへの理解も上がりましたし，タスクを可視化することでモチベーションも維持できたので良かったです．
 
-Things you may want to cover:
+## 開発環境
+- Ruby on Rails
+- PostgreSQL
+- Cloud9
+- Heroku
+- Circle CI
+- S3
 
-* Ruby version
+## 実装機能
+- スレッド、レス及びユーザー情報一覧詳細削除更新投稿（いわゆるCRUD）機能
+- TwitterアカウントでのOauth認証機能
+- タグ付け機能（いわゆる多対多リレーション）
+- タグ検索機能
+- ページネーション機能
+- 画像投稿機能(S3をストレージとして使用)
+- テストコード
 
-* System dependencies
+## 作成期間
+設計含め一ヶ月ほど
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
